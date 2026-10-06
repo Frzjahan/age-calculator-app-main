@@ -1,0 +1,116 @@
+:root{
+    --Purple500: hsl(259, 100%, 65%);
+    --Red400: hsl(0, 100%, 67%);
+    --White: hsl(0, 100%, 100%);
+    --Grey100: hsl(0, 0%, 94%);
+    --Grey200: hsl(0, 0%, 86%);
+    --Grey500: hsl(0, 1%, 44%);
+    --Black: hsl(0, 0%, 0%);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+::before ::after{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 50px;
+    font-family: 'Poppins', sans-serif;
+}
+
+label{
+    font-size: 10px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    color: var(--Grey500);
+}
+
+input{
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    padding: 5px 10px;
+    border-radius: 5px;
+    border: 1px solid var(--Grey200);
+    caret-color: var(--Purple500);
+}
+
+input:focus{
+    outline: none;
+    border: 1px solid var(--Purple500);
+}
+
+.age-container span{
+    font-family: 'Poppins', sans-serif;
+    font-size: 55px;
+    font-weight: 800;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 100px;
+    gap: 5px;
+}
+
+.arrow-icon-with-line{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: var(--Grey200);
+}
+
+.show-btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--Purple500);
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+    border: none;
+    border-radius: 500px;
+    width: 40px;
+    height: 40px;
+    padding: 30px;
+    cursor: pointer;
+}
+
+.show-btn:active{
+    background-color: black;
+}
+
+.two-spaces{
+    color: var(--Purple500);
+}
+
+.error-txt{
+    min-height: 20px;
+}
+
+.error{
+    color: var(--Red400);
+    font-size: 10px;
+    font-style: italic;
+}
